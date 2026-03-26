@@ -35,7 +35,7 @@ of the group report.
 
 | ID  | Description |
 |-----|-------------|
-| S1  | ERA5 index — current MAGA baseline |
+| S1  | ERA5 index - current MAGA baseline |
 | S2  | CHIRPS index |
 | S3  | Composite index (NDVI + SPI) |
 | S4  | ERA5 + Basis Risk Fund (BRF) |
@@ -44,7 +44,7 @@ of the group report.
 | S7  | CHIRPS + full premium subsidy |
 | S8  | CHIRPS + conventional seeds (no DT) |
 | S9  | High-stress scenario (drought probability = 50%) |
-| S10 | CHIRPS + audits + 50% subsidy — **recommended design** |
+| S10 | CHIRPS + audits + 50% subsidy - **recommended design** |
 
 ---
 
