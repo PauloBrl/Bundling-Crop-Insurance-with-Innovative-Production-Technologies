@@ -2,7 +2,7 @@
 Monte Carlo simulation evaluating bundled weather-index insurance, input credit, and drought-tolerant seed scenarios for smallholder farmers in Guatemala's Dry Corridor. MSc coursework, Imperial Business School 2026.
 
 
-# Guatemala Dry Corridor — Bundled Insurance & Input Finance Model
+# Guatemala Dry Corridor: Bundled Insurance & Input Finance Model
 
 **Course:** Risk Management and Climate Change  
 **Programme:** MSc Climate Change, Management and Finance  
@@ -50,12 +50,12 @@ of the group report.
 
 ## The 6 output dimensions
 
-1. **Basis risk** — false-negative rate (FN) and false-positive rate (FP)
-2. **Farmer income gain** — net USD/ha/yr relative to uninsured baseline
-3. **Tail risk** — Value-at-Risk (VaR 5%) and Conditional VaR (CVaR 5%)
-4. **Insurer viability** — loss ratio at fair pricing
-5. **Credit enhancement** — interest rate reduction and saving (informational)
-6. **DT seed adoption** — trajectory over 5 seasons
+1. **Basis risk** : false-negative rate (FN) and false-positive rate (FP)
+2. **Farmer income gain** : net USD/ha/yr relative to uninsured baseline
+3. **Tail risk** : Value-at-Risk (VaR 5%) and Conditional VaR (CVaR 5%)
+4. **Insurer viability** : loss ratio at fair pricing
+5. **Credit enhancement** : interest rate reduction and saving (informational)
+6. **DT seed adoption** : trajectory over 5 seasons
 
 ---
 
@@ -96,43 +96,43 @@ Verified stable at T = 200 (seed-to-seed VaR spread < $18).
 
 Four papers are directly parameterised in the code:
 
-- **Carter, Cheng & Sarris (2016, JDE)** — portfolio equilibrium 
+- **Carter, Cheng & Sarris (2016, JDE)** - portfolio equilibrium 
   multiplier (1.39×); meso-level interlinkage flattens lender loan 
   supply curve
-- **Mobarak & Rosenzweig (2013, AER P&P)** — trust recovery parameter 
+- **Mobarak & Rosenzweig (2013, AER P&P)** - trust recovery parameter 
   (trust_rec = 0.10); informal network offset for peer-level diffusion
-- **Biffis & Chavez (2017, Risk Analysis)** — farm-scale ρ discount 
+- **Biffis & Chavez (2017, Risk Analysis)** - farm-scale ρ discount 
   (−15pp); minimum viable ρ concept
-- **Biffis et al. (2022, Geneva Risk)** — no credit double-counting; 
+- **Biffis et al. (2022, Geneva Risk)** - no credit double-counting; 
   affordability channel for subsidies
 
 ---
 
 ## Known limitations
 
-1. **Single representative farmer** — no wealth heterogeneity or 
+1. **Single representative farmer** : no wealth heterogeneity or 
    variation in risk aversion. The model cannot reproduce distributional 
    adoption dynamics across farm sizes.
 
-2. **Adoption parameters transferred from other countries** — 
+2. **Adoption parameters transferred from other countries** : 
    disadoption rates are calibrated on Tanzania, Ethiopia, and India 
    data. No Guatemala-specific calibration exists. Year-5 adoption 
    figures (30–42%) are illustrative projections, not forecasts.
 
-3. **ρ values derived from Mozambique** — the correlation coefficient 
+3. **ρ values derived from Mozambique** : the correlation coefficient 
    ρ = 0.78 for CHIRPS is a literature transfer from Biffis & Chavez 
    (2017), not an empirically estimated value for the Dry Corridor.
 
-4. **No climate non-stationarity** — drought probability is fixed at 
+4. **No climate non-stationarity** - drought probability is fixed at 
    0.30. S9 is a stress test, not a trajectory. A structural shift to 
    pd = 0.50 raises lifetime default probability to 100%.
 
-5. **No peril basis risk** — the model only captures weather-index 
+5. **No peril basis risk** - the model only captures weather-index 
    spatial mismatch. Losses from fall armyworm, Roya, or localised 
    flooding are not modelled. True false-negative rates are higher than 
    reported.
 
-6. **Maize only** — yield parameters, drought probability, and input 
+6. **Maize only** - yield parameters, drought probability, and input 
    costs are maize-specific. Extension to coffee or sugarcane requires 
    full re-parameterisation.
 
@@ -154,11 +154,11 @@ Output:
 - Printed results table (all 10 scenarios × 6 dimensions)
 - Section 6 recommendation text
 - Verification checks (all should pass)
-- `fig1_scenarios.png` — 6-panel scenario dashboard
-- `fig2_distributions.png` — Monte Carlo income distributions
-- `fig3_sensitivity.png` — sensitivity tornado chart
-- `fig4_tradeoff.png` — NGO cost vs income gain scatter
-- `fig5_adoption.png` — adoption trajectories over 5 seasons
+- `fig1_scenarios.png` : 6-panel scenario dashboard
+- `fig2_distributions.png` : Monte Carlo income distributions
+- `fig3_sensitivity.png` : sensitivity tornado chart
+- `fig4_tradeoff.png` : NGO cost vs income gain scatter
+- `fig5_adoption.png` : adoption trajectories over 5 seasons
 
 ---
 
