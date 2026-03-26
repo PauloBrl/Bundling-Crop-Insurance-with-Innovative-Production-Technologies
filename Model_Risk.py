@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Mar 23 23:33:36 2026
-
-@author: yassinlouali
-"""
-
 """
 Guatemala Dry Corridor — Bundled Insurance & Input Finance Model
 Version 8 — Comprehensive fixes on top of v7.
